@@ -30,7 +30,7 @@ export class UserInMemoryRepository implements UsersRepository {
 
     findByEmail(email: string): User | Promise<User> {
         const user = this.database.find((user) => user.email == email)
-        return plainToInstance(User, user)
+        return user
     }
 
     update(id: string, data: UpdateUserDto): User | Promise<User> {
