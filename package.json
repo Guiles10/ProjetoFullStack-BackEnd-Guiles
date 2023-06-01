@@ -65,7 +65,6 @@
     "typescript": "^5.0.0"
   },
   "devDependencies": {
-    
   },
   "jest": {
     "moduleFileExtensions": [
@@ -83,5 +82,9 @@
     ],
     "coverageDirectory": "../coverage",
     "testEnvironment": "node"
+  },
+  "engines": {
+
+    "node": ">=16.0.0 <17.0.0"
   }
 }
