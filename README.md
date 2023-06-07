@@ -37,7 +37,7 @@ A URL base da aplicação: http://localhost:3000
 
 Diagrama ER da API definindo as relações entre as tabelas do banco de dados.
 
-![DER](DER Projeto FullStack.PNG)
+![DER](DER.PNG)
 
 ---
 
