@@ -1,19 +1,92 @@
-Olá, sejá bem vindo ao Projeto Back End => AccOrganized
+# Olá, sejá bem vindo !!
+# Projeto Back End => AccOrganized
 
-Para exsecutar o projeto siga o passo a passo abaixo:
+## Tabela de Conteúdos
 
-1 - Clone o repositório na sua Maquina.
+- [Visão Geral](#1-visão-geral)
+- [Diagrama ER](#2-diagrama-er)
+- [Início Rápido](#3-início-rápido)
+  - [Instalando dependências](#31-instalando-dependências)
+  - [Variáveis de ambiente](#32-variáveis-de-ambiente)
+  - [Migrations](#33-migrations)
+  - [Rodando a aplicação](#34-rodando-a-aplicação)
+- [Endpoints](#4-endpoints)
 
-2 - utilize o comando 'npm install' para instalar as dependencias da aplicação.
+---
 
-3 - crie um arquivo chamado '.env' usando como exemplo os arquivo '.env.examplle', e completo as informações com o seu banco de dados.
+## 1. Visão Geral
 
-4 - utilize o comando 'npx prisma migrate dev' para rodar as migrações no banco de dados.
+[ Voltar para o topo ](#tabela-de-conteúdos)
 
-5 - utilize o comando 'npm run start:dev' para iniciar a aplicação.
+Trata-se de uma API que gerencia contatos de um usuário, sendo possível fazer o cadastro com nome, email e telefone. Possui um CRUD completo para os contatos e também para o usuário, além de autenticação. As tecnologias utilizadas foram:
+
+- [NodeJS](https://nodejs.org/en/)
+- [Nest](https://nestjs.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [PostgreSQL](https://www.postgresql.org/)
+- [Prisma](https://www.prisma.io/)
+- [Passaport JWT](https://www.passportjs.org/packages/passport-jwt/)
+
+A URL base da aplicação: http://localhost:3000
+
+---
+
+## 2. Diagrama ER
+
+[ Voltar para o topo ](#tabela-de-conteúdos)
+
+Diagrama ER da API definindo as relações entre as tabelas do banco de dados.
+
+![DER](DER Projeto FullStack.PNG)
+
+---
+
+## 3. Início Rápido
+
+[ Voltar para o topo ](#tabela-de-conteúdos)
+
+### 3.1. Instalando Dependências
+
+Clone o projeto em sua máquina e instale as dependências com o comando:
+
+```shell
+npm install
+```
+
+### 3.2. Variáveis de Ambiente
+
+Em seguida, crie um arquivo **.env**, copiando o formato do arquivo **.env.example**:
+
+```
+cp .env.example .env
+```
+
+Configure suas variáveis de ambiente com suas credenciais do Postgres, uma nova database da sua escolha e a chave-secreta.
+
+### 3.3. Migrations
+
+Execute as migrations com o comando:
+
+```
+npx prisma migrate dev
+```
+
+### 3.4 Rodando a aplicação
+
+Para rodar a aplicação, utilize o comando:
+
+```
+npm run start:dev
+```
+
+---
+
+## 4. Endpoints
+
+[ Voltar para o topo ](#tabela-de-conteúdos)
+
+Para acessar os endpoints e a documentação, rode a aplicação e acesse em seu navegador: http://localhost:3000/doc
 
 
-
-Obs: Lembre de clonar e executar o repositóriodo Front-End deste projeto para pode utilizar todas suas funcionalidades.
-
- link => https://github.com/Guiles10/ProjetoFullStack-Front-End-Guiles10
+Obs: Acesse o repositório Frone End deste projeto.
+[Link Frontend](https://github.com/Guiles10/ProjetoFullStack-Front-End-Guiles10)
